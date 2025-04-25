@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Error</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <script>
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: '<%= message %>',
+      confirmButtonText: 'OK'
+    }).then(() => {
+      window.location.href = '/login'; // redirect back to register page
+    });
+  </script>
+</body>
+</html>
